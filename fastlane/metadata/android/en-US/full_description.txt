@@ -1,0 +1,1 @@
+TextAhead allows you to schedule SMS messages for later delivery. All messages are stored locally, and no data is collected or tracked.

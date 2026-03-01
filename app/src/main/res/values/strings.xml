@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TextAhead</string>
+    <string name="framtiden">Select a time in the future!</string>
+    <string name="velg_tid">Please selct date and time</string>
+    <string name="telefonnummer">Please enter a phone number</string>
+    <string name="meddealande">Please enter a message</string>
+    <string name="send">SEND</string>
+    <string name="scheduled_send">SCHEDULED SEND</string>
+    <string name="send_immediatly">Send immediately</string>
+    <string name="planera">Schedule this for:</string>
+    <string name="recipient">Recipient</string>
+    <string name="message">Message</string>
+    <string name="schedule">Schedule</string>
+    <string name="pick_from_contacts">Pick from Contacts</string>
+    <string name="pick_date_amp_time"><![CDATA[Pick Date & Time]]></string>
+    <string name="send_">Send</string>
+    <string name="view_scheduled_messages">View Scheduled Messages</string>
+    <string name="enter_message">Enter message</string>
+    <string name="send_immediately">Send immediately</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="sceduled_for">"Scheduled for: %1$s"</string>
+    <string name="contact_name_number">Contact Name / Number</string>
+    <string name="message_preview">Message preview</string>
+    <string name="delete">DELETE</string>
+    <string name="scheduled_time">Scheduled time</string>
+</resources>

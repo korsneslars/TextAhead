@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ===== Recipient Section ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recipient"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxStrokeColor="@color/gray_600">
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/enter_phone_number"
+                android:inputType="phone"
+                android:autofillHints="Enter phone number"
+                android:padding="12dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPickContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_from_contacts"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="end"
+            app:cornerRadius="8dp"
+            app:strokeColor="@color/purple_200"
+            app:strokeWidth="1dp"
+            android:textAllCaps="false"/>
+
+        <!-- ===== Message Section ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="24dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxStrokeColor="@color/gray_600">
+
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="@string/enter_message"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:autofillHints="Enter message"
+                android:padding="12dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ===== Schedule Section ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/schedule"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="24dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPickDateTime"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/pick_date_amp_time"
+            android:layout_marginTop="8dp"
+            app:cornerRadius="8dp"
+            app:strokeColor="@color/purple_200"
+            app:strokeWidth="1dp"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/textScheduled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_immediately"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/gray_600"
+            android:textSize="14sp"/>
+
+        <!-- ===== Action Buttons ===== -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSend"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/send_"
+            android:enabled="true"
+            android:layout_marginTop="32dp"
+            android:padding="16dp"
+            app:cornerRadius="12dp"
+            app:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewScheduled"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/view_scheduled_messages"
+            android:layout_marginTop="12dp"
+            app:cornerRadius="8dp"
+            app:strokeColor="@color/purple_200"
+            app:strokeWidth="1dp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+</ScrollView>

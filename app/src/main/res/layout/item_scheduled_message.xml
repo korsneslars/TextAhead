@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Contact / Phone -->
+        <TextView
+            android:id="@+id/textContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_name_number"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/light_red"/>
+
+        <!-- Message preview -->
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/message_preview"
+            android:textColor="@color/purple"/>
+
+        <!-- Scheduled time -->
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/scheduled_time"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textCountdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Delete button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/delete"
+            android:textAllCaps="true"
+            app:backgroundTint="@color/light_red"
+            android:textColor="@android:color/white"
+            app:cornerRadius="8dp"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
